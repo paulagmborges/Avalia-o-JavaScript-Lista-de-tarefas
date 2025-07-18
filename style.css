@@ -1,0 +1,43 @@
+*{
+    font-family: Roboto;
+    ;
+}
+
+ body{ 
+  background-image: url('./image/bg.jpg');
+  background-size: cover;         
+  background-repeat: no-repeat;   
+  background-position: center; 
+  background-attachment: fixed; 
+ }
+h1{
+    font-family:Luckiest Guy, cursive ;
+    color:#9B827D;
+    letter-spacing: 2px;
+}
+
+.btn{
+    background-color:#CDBAB4 ! ;
+    color:white !;
+   
+}
+.btn:hover{
+    background-color: #9B827D !;
+}
+.btn-success:hover,
+.btn-danger:hover {
+    background-color: #9B827D; 
+    color: white; 
+}
+
+
+
+@media (min-width: 768px) {
+    h1 {
+        letter-spacing: 4px; 
+       
+    }
+}
+
+
+

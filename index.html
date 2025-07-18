@@ -1,12 +1,97 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Lista de tarefas</title>
-</head>
-<body>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Luckiest+Guy&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container mt-5">
+      <h1 class="fw-bold fs-1 text-center">Lista de tarefas</h1>
+      <div class="card mb-4 p-4">
+        <form id="form" class="row">
+          <div class="col-12 col-md-4 mb-3">
+            <input
+              type="text"
+              class="form-control"
+              id="descricao"
+              placeholder="Escreva a tarefa"
+            />
+          </div>
+          <div class="col-12 col-md-4 mb-3">
+            <select id="prioridade" class="form-select">
+              <option selected disabled value="">Escolha a prioridade</option>
+              <option value="Alta">Alta</option>
+              <option value="Média">Média</option>
+              <option value="Baixa">Baixa</option>
+            </select>
+          </div>
+          <div class="col-md-4 mb-3">
+            <button class="btn w-100">Adicionar tarefas</button>
+          </div>
+        </form>
+        <div
+          id="alertaTarefaDescricao"
+          class="alert alert-warning d-none text-center fw-bold rounded-4"
+          role="alert"
+          style="
+            background-color: #f2e7e3;
+            color: #a38b86;
+            border: 2px dashed #9b827d;
+          "
+        >
+          <i class="bi bi-list-task"></i> Preencha o campo de tarefa !
+        </div>
+        <div
+          id="alertaTarefaPrioridade"
+          class="alert alert-warning d-none text-center fw-bold rounded-4"
+          role="alert"
+          style="
+            background-color: #f2e7e3;
+            color: #a38b86;
+            border: 2px dashed #9b827d;
+          "
+        >
+          <i class="bi bi-list-task"></i> Preencha o campo de prioridade!
+        </div>
+      </div>
+      <div class="card p-3">
+        <div class="table-responsive"></div>
+        <table class="table table-bordered text-center col-3">
+          <thead>
+            <tr>
+              <th>Descrição</th>
+              <th>Prioridade</th>
+              <th>Ação</th>
+            </tr>
+          </thead>
+          <tbody id="listaTarefas"></tbody>
+        </table>
+      </div>
+    </div>
 
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"></script>
     <script src="./script.js"></script>
-</body>
+  </body>
 </html>
