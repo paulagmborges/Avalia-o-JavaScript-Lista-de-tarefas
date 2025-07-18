@@ -1,5 +1,6 @@
 *{
-    font-family: Roboto;
+    font-family: 'Roboto', sans-serif;
+
     ;
 }
  body{ 
@@ -10,9 +11,9 @@
   background-attachment: fixed; 
  }
 .title {
-    font-family:Luckiest Guy;
+    font-family: 'Luckiest Guy', cursive;
     color:#9B827D ;
-    letter-spacing: 2px !;
+    letter-spacing: 2px !important;
 }
 
 .btn-adicionar{
@@ -45,7 +46,7 @@
 @media (min-width: 768px) {
     .title {
     font-family:Luckiest Guy;
-    letter-spacing: 4px; 
+    letter-spacing: 4px !important; 
        
     }
 }
