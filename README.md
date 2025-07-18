@@ -49,11 +49,17 @@ seu-projeto/
 ├── index.html
 ├── style.css
 ├── script.js
-└── image/
+└── assets/
     └── bg.jpg
 
 ````
+### 🔗Link 
+[Clique aqui!](https://paulagmborges.github.io/Avalia-o-JavaScript-Lista-de-tarefas/) <br><br>
 
-### Desenvolvido por:
+### 🖼️ Visão geral do projeto
+![Imagem do projeto:](./assets/image-readme.png )
+<br><br>
+
+### Desenvolvido por
 ---
  Paula Borges
