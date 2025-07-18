@@ -142,6 +142,16 @@ function atualizarTarefasNoLocalStorage() {
   localStorage.setItem("tarefas", JSON.stringify(tarefasAtualizadas));
 }
 
+function removerTarefaDoLocalStorage(tarefaRemover) {
+  const tarefas = obterTarefasDoLocalStorage();
+  const tarefasAtualizadas = tarefas.filter(
+    (tarefa) =>
+      tarefa.descricao !== tarefaRemover.descricao ||
+      tarefa.prioridade !== tarefaRemover.prioridade
+  );
+  localStorage.setItem("tarefas", JSON.stringify(tarefasAtualizadas));
+}
+
 function carregarTarefas() {
   const tarefas = obterTarefasDoLocalStorage();
   tarefas.forEach((tarefa) => adicionarTarefaNaTabela(tarefa));

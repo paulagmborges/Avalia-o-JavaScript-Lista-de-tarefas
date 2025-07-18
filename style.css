@@ -2,7 +2,6 @@
     font-family: Roboto;
     ;
 }
-
  body{ 
   background-image: url('./image/bg.jpg');
   background-size: cover;         
@@ -10,31 +9,43 @@
   background-position: center; 
   background-attachment: fixed; 
  }
-h1{
-    font-family:Luckiest Guy, cursive ;
-    color:#9B827D;
-    letter-spacing: 2px;
+.title {
+    font-family:Luckiest Guy;
+    color:#9B827D ;
+    letter-spacing: 2px !;
 }
 
-.btn{
-    background-color:#CDBAB4 ! ;
+.btn-adicionar{
+    background-color:#CDBAB4  ;
     color:white !;
    
 }
-.btn:hover{
-    background-color: #9B827D !;
+.btn-adicionar:hover{
+    background-color: #9B827D ;
 }
 .btn-success:hover,
 .btn-danger:hover {
-    background-color: #9B827D; 
-    color: white; 
+    background-color: #9B827D ; 
+    color: white !; 
 }
 
-
+.btn-success,
+.btn-danger,
+.btn-secondary {
+  background-color: #CDBAB4 !important;
+  color: white !important; 
+}
+.btn-success:hover,
+.btn-danger:hover,
+.btn-secondary:hover {
+  background-color: #9B827D !important;
+  color: white !important;
+}
 
 @media (min-width: 768px) {
-    h1 {
-        letter-spacing: 4px; 
+    .title {
+    font-family:Luckiest Guy;
+    letter-spacing: 4px; 
        
     }
 }
