@@ -17,7 +17,7 @@
 
 .btn-adicionar{
     background-color:#CDBAB4  ;
-    color:white !;
+    color:white !important;
    
 }
 .btn-adicionar:hover{
@@ -26,7 +26,7 @@
 .btn-success:hover,
 .btn-danger:hover {
     background-color: #9B827D ; 
-    color: white !; 
+    color: white !important; 
 }
 
 .btn-success,
